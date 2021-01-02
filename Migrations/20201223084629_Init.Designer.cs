@@ -7,7 +7,7 @@ using TrackingBlocksAPI.Models;
 
 namespace TrackingBlocksAPI.Migrations
 {
-    [DbContext(typeof(BlacksContext))]
+    [DbContext(typeof(BlocksContext))]
     [Migration("20201223084629_Init")]
     partial class Init
     {

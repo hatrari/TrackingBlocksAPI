@@ -7,9 +7,9 @@ namespace TrackingBlocksAPI.Repositories
 {
   public class BlockRepository : IBlockRepository
   {
-    private readonly BlacksContext _context; 
+    private readonly BlocksContext _context; 
     
-    public BlockRepository(BlacksContext context)
+    public BlockRepository(BlocksContext context)
     {
       _context = context;
     }

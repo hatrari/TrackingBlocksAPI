@@ -6,7 +6,7 @@ using TrackingBlocksAPI.Models;
 
 namespace TrackingBlocksAPI.Migrations
 {
-    [DbContext(typeof(BlacksContext))]
+    [DbContext(typeof(BlocksContext))]
     partial class BlacksContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

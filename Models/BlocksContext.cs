@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace TrackingBlocksAPI.Models
 {
-  public class BlacksContext : DbContext
+  public class BlocksContext : DbContext
   {
     public DbSet<Block> Blocks { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder options)
