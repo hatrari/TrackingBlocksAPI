@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using TrackingBlocksAPI.Repositories;
+using TrackingBlocksAPI.Models;
 
 namespace TrackingBlocksAPI
 {
@@ -26,6 +27,7 @@ namespace TrackingBlocksAPI
     {
       services.AddControllers();
       services.AddScoped<IBlockRepository, BlockRepository>();
+      services.AddScoped<BlocksContext>();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
