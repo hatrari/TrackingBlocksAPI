@@ -28,5 +28,19 @@ namespace TrackingBlocksAPI.Controllers
       _blocksRepo.Add(block);
       return block;
     }
+
+    [HttpPut]
+    public Block Put([FromBody] Block block)
+    {
+      _blocksRepo.Update(block);
+      return block;
+    }
+
+    [HttpDelete]
+    public Block Delete([FromBody] Block block)
+    {
+      _blocksRepo.Remove(block);
+      return block;
+    }
   }
 }
